@@ -1,6 +1,6 @@
 ### Hi, I'm Tony
 
-Studying at National Taipei University of Technology
+Graduated at National Taipei University of Technology
 
 Intern in Sunbird Inc.
 
