@@ -2,7 +2,7 @@
 
 Graduated at National Taipei University of Technology
 
-Intern in Sunbird Inc.
+Frontend engineer in Sunbird Inc. since 2023
 
 My Page: [blog.syntony666.com](https://blog.syntony666.com)
 
