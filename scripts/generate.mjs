@@ -49,6 +49,7 @@ const LANGS_QUERY = `
     user(login: $login) {
       repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
         nodes {
+          name
           languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
             edges {
               size
@@ -128,14 +129,18 @@ const RANK_LEVELS = [
 const rank = RANK_LEVELS.find(([t]) => percentile <= t)?.[1] ?? "C";
 const rankColor = { S: "#a08c5b", A: "#6f8ba4", B: "#7d9468" }[rank[0]] ?? "#8a9199";
 
-const EXCLUDED_LANGS = new Set(
-  (process.env.EXCLUDE_LANGS ?? "Stylus,SCSS")
-    .split(",")
-    .map((s) => s.trim().toLowerCase())
-    .filter(Boolean)
-);
+const envSet = (name, fallback = "") =>
+  new Set(
+    (process.env[name] ?? fallback)
+      .split(",")
+      .map((s) => s.trim().toLowerCase())
+      .filter(Boolean)
+  );
+const EXCLUDED_LANGS = envSet("EXCLUDE_LANGS", "Stylus,SCSS");
+const EXCLUDED_REPOS = envSet("EXCLUDE_REPOS");
 const langTotals = new Map();
 for (const repo of langData.repositories.nodes) {
+  if (EXCLUDED_REPOS.has(repo.name.toLowerCase())) continue;
   for (const edge of repo.languages.edges) {
     const name = edge.node.name;
     if (EXCLUDED_LANGS.has(name.toLowerCase())) continue;

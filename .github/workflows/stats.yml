@@ -26,6 +26,8 @@ jobs:
       - name: Generate stats svg
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+          EXCLUDE_LANGS: ${{ vars.EXCLUDE_LANGS }}
+          EXCLUDE_REPOS: ${{ vars.EXCLUDE_REPOS }}
         run: node scripts/generate.mjs
       - name: Commit stats
         run: |
