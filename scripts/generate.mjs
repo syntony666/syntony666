@@ -187,25 +187,34 @@ const langRows = langs
   )
   .join("");
 
-const svg = `<?xml version="1.0" encoding="UTF-8"?>
+const PALETTES = {
+  light: {
+    text: "#3d444d",
+    strong: "#1f2328",
+    accent: "#3f7a70",
+    line: "#d1d9e0",
+    track: "#e8edf2",
+  },
+  dark: {
+    text: "#9198a1",
+    strong: "#f0f6fc",
+    accent: "#7db0a4",
+    line: "#3d444d",
+    track: "#1c2128",
+  },
+};
+
+const renderSvg = (p) => `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="200" viewBox="0 0 720 200">
   <title>${USER}'s GitHub stats</title>
   <style>
     text { font-family: ui-sans-serif, -apple-system, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; }
-    .t { fill: #3d444d; font-size: 12.5px; }
-    .b { fill: #1f2328; font-size: 12.5px; font-weight: 600; }
-    .h { fill: #1f2328; font-size: 14px; font-weight: 600; }
-    .accent { fill: #5c7255; }
-    .line { stroke: #d1d9e0; }
-    .track { fill: #e8edf2; }
-    @media (prefers-color-scheme: dark) {
-      .t { fill: #9198a1; }
-      .b { fill: #f0f6fc; }
-      .h { fill: #f0f6fc; }
-      .accent { fill: #93a87f; }
-      .line { stroke: #3d444d; }
-      .track { fill: #262c36; }
-    }
+    .t { fill: ${p.text}; font-size: 12.5px; }
+    .b { fill: ${p.strong}; font-size: 12.5px; font-weight: 600; }
+    .h { fill: ${p.strong}; font-size: 14px; font-weight: 600; }
+    .accent { fill: ${p.accent}; }
+    .line { stroke: ${p.line}; }
+    .track { fill: ${p.track}; }
   </style>
   <rect x="0.5" y="0.5" width="719" height="199" rx="6" fill="none" class="line"/>
   <line x1="375" y1="18" x2="375" y2="182" class="line"/>
@@ -222,11 +231,15 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
 </svg>
 `;
 
-const outPath = fileURLToPath(new URL("../stats/stats.svg", import.meta.url));
-mkdirSync(dirname(outPath), { recursive: true });
-writeFileSync(outPath, svg);
+const outDir = fileURLToPath(new URL("../stats/", import.meta.url));
+mkdirSync(outDir, { recursive: true });
+for (const [name, palette] of Object.entries(PALETTES)) {
+  writeFileSync(`${outDir}stats-${name}.svg`, renderSvg(palette));
+}
 console.log(
-  `wrote ${outPath}`,
+  `wrote ${Object.keys(PALETTES)
+    .map((n) => `${outDir}stats-${n}.svg`)
+    .join(", ")}`,
   JSON.stringify({
     stars: totalStars,
     commits: totalCommits,

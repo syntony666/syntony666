@@ -6,17 +6,9 @@
     .t { fill: #3d444d; font-size: 12.5px; }
     .b { fill: #1f2328; font-size: 12.5px; font-weight: 600; }
     .h { fill: #1f2328; font-size: 14px; font-weight: 600; }
-    .accent { fill: #5c7255; }
+    .accent { fill: #3f7a70; }
     .line { stroke: #d1d9e0; }
     .track { fill: #e8edf2; }
-    @media (prefers-color-scheme: dark) {
-      .t { fill: #9198a1; }
-      .b { fill: #f0f6fc; }
-      .h { fill: #f0f6fc; }
-      .accent { fill: #93a87f; }
-      .line { stroke: #3d444d; }
-      .track { fill: #262c36; }
-    }
   </style>
   <rect x="0.5" y="0.5" width="719" height="199" rx="6" fill="none" class="line"/>
   <line x1="375" y1="18" x2="375" y2="182" class="line"/>

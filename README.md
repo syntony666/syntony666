@@ -10,5 +10,7 @@ Blog: [blog.syntony666.com](https://blog.syntony666.com)
 - **[map-gallery](https://github.com/syntony666/map-gallery)** — Photo collections organized on an interactive Taiwan map. React 19 + Vite + Leaflet SPA, Hono + Drizzle + SQLite API.
 - **[rlcd-esp32-controller](https://github.com/syntony666/rlcd-esp32-controller)** — ESP32-S3 controller firmware for a 4.2" RLCD display (ESP-IDF, C).
 
-|[![](https://github-readme-stats.vercel.app/api/top-langs/?username=syntony666&layout=compact&theme=nord&count_private=true&card_width=400&langs_count=6&hide=stylus,scss)](#)|[![](https://github-readme-stats.vercel.app/api?username=syntony666&theme=nord&show_icons=true&count_private=true&hide=contribs&line_height=24)](#)|
-|---|---|
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./stats/stats-dark.svg">
+  <img src="./stats/stats-light.svg" alt="syntony666's GitHub stats">
+</picture>
