@@ -34,26 +34,26 @@
   
     <text x="400" y="64" class="t">TypeScript</text>
     <rect x="505" y="57" width="130" height="8" rx="4" class="track"/>
-    <rect x="505" y="57" width="41.9" height="8" rx="4" fill="#3178c6"/>
-    <text x="688" y="64" class="t" text-anchor="end">32.3%</text>
+    <rect x="505" y="57" width="43.7" height="8" rx="4" fill="#3178c6"/>
+    <text x="688" y="64" class="t" text-anchor="end">33.6%</text>
     <text x="400" y="87" class="t">Python</text>
     <rect x="505" y="80" width="130" height="8" rx="4" class="track"/>
-    <rect x="505" y="80" width="32.3" height="8" rx="4" fill="#3572A5"/>
-    <text x="688" y="87" class="t" text-anchor="end">24.9%</text>
+    <rect x="505" y="80" width="33.7" height="8" rx="4" fill="#3572A5"/>
+    <text x="688" y="87" class="t" text-anchor="end">25.9%</text>
     <text x="400" y="110" class="t">C++</text>
     <rect x="505" y="103" width="130" height="8" rx="4" class="track"/>
-    <rect x="505" y="103" width="21.6" height="8" rx="4" fill="#f34b7d"/>
-    <text x="688" y="110" class="t" text-anchor="end">16.6%</text>
+    <rect x="505" y="103" width="22.5" height="8" rx="4" fill="#f34b7d"/>
+    <text x="688" y="110" class="t" text-anchor="end">17.3%</text>
     <text x="400" y="133" class="t">PHP</text>
     <rect x="505" y="126" width="130" height="8" rx="4" class="track"/>
-    <rect x="505" y="126" width="7.7" height="8" rx="4" fill="#4F5D95"/>
-    <text x="688" y="133" class="t" text-anchor="end">5.9%</text>
+    <rect x="505" y="126" width="8.0" height="8" rx="4" fill="#4F5D95"/>
+    <text x="688" y="133" class="t" text-anchor="end">6.1%</text>
     <text x="400" y="156" class="t">C</text>
     <rect x="505" y="149" width="130" height="8" rx="4" class="track"/>
-    <rect x="505" y="149" width="5.8" height="8" rx="4" fill="#555555"/>
-    <text x="688" y="156" class="t" text-anchor="end">4.4%</text>
-    <text x="400" y="179" class="t">CSS</text>
+    <rect x="505" y="149" width="6.0" height="8" rx="4" fill="#555555"/>
+    <text x="688" y="156" class="t" text-anchor="end">4.6%</text>
+    <text x="400" y="179" class="t">Jupyter Not…</text>
     <rect x="505" y="172" width="130" height="8" rx="4" class="track"/>
-    <rect x="505" y="172" width="5.2" height="8" rx="4" fill="#663399"/>
-    <text x="688" y="179" class="t" text-anchor="end">4.0%</text>
+    <rect x="505" y="172" width="4.0" height="8" rx="4" fill="#DA5B0B"/>
+    <text x="688" y="179" class="t" text-anchor="end">3.1%</text>
 </svg>
