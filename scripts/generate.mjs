@@ -131,7 +131,7 @@ const rankColor = { S: "#a08c5b", A: "#6f8ba4", B: "#7d9468" }[rank[0]] ?? "#8a9
 
 const envSet = (name, fallback = "") =>
   new Set(
-    (process.env[name] ?? fallback)
+    (process.env[name] || fallback)
       .split(",")
       .map((s) => s.trim().toLowerCase())
       .filter(Boolean)
