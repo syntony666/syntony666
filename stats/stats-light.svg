@@ -34,26 +34,26 @@
   
     <text x="400" y="64" class="t">C</text>
     <rect x="505" y="57" width="130" height="8" rx="4" class="track"/>
-    <rect x="505" y="57" width="115.9" height="8" rx="4" fill="#555555"/>
-    <text x="688" y="64" class="t" text-anchor="end">89.2%</text>
+    <rect x="505" y="57" width="115.0" height="8" rx="4" fill="#555555"/>
+    <text x="688" y="64" class="t" text-anchor="end">88.5%</text>
     <text x="400" y="87" class="t">C++</text>
     <rect x="505" y="80" width="130" height="8" rx="4" class="track"/>
     <rect x="505" y="80" width="7.3" height="8" rx="4" fill="#f34b7d"/>
     <text x="688" y="87" class="t" text-anchor="end">5.6%</text>
     <text x="400" y="110" class="t">TypeScript</text>
     <rect x="505" y="103" width="130" height="8" rx="4" class="track"/>
-    <rect x="505" y="103" width="2.8" height="8" rx="4" fill="#3178c6"/>
+    <rect x="505" y="103" width="2.7" height="8" rx="4" fill="#3178c6"/>
     <text x="688" y="110" class="t" text-anchor="end">2.1%</text>
     <text x="400" y="133" class="t">Python</text>
     <rect x="505" y="126" width="130" height="8" rx="4" class="track"/>
     <rect x="505" y="126" width="2.1" height="8" rx="4" fill="#3572A5"/>
     <text x="688" y="133" class="t" text-anchor="end">1.6%</text>
-    <text x="400" y="156" class="t">PHP</text>
+    <text x="400" y="156" class="t">Stylus</text>
     <rect x="505" y="149" width="130" height="8" rx="4" class="track"/>
-    <rect x="505" y="149" width="0.5" height="8" rx="4" fill="#4F5D95"/>
+    <rect x="505" y="149" width="0.5" height="8" rx="4" fill="#ff6347"/>
     <text x="688" y="156" class="t" text-anchor="end">0.4%</text>
-    <text x="400" y="179" class="t">CSS</text>
+    <text x="400" y="179" class="t">PHP</text>
     <rect x="505" y="172" width="130" height="8" rx="4" class="track"/>
-    <rect x="505" y="172" width="0.3" height="8" rx="4" fill="#663399"/>
-    <text x="688" y="179" class="t" text-anchor="end">0.3%</text>
+    <rect x="505" y="172" width="0.5" height="8" rx="4" fill="#4F5D95"/>
+    <text x="688" y="179" class="t" text-anchor="end">0.4%</text>
 </svg>
