@@ -208,9 +208,9 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   <text x="30" y="34" class="h accent">${USER}'s GitHub Stats</text>
   ${statRows}
 
-  <circle cx="322" cy="105" r="30" fill="none" stroke="${rankColor}" stroke-width="3"/>
-  <text x="322" y="110" text-anchor="middle" font-size="14" font-weight="600" fill="${rankColor}">${rank}</text>
-  <text x="322" y="152" text-anchor="middle" class="t" font-size="10">top ${percentile.toFixed(1)}%</text>
+  <circle cx="322" cy="103" r="30" fill="none" stroke="${rankColor}" stroke-width="3"/>
+  <text x="322" y="108" text-anchor="middle" font-size="14" font-weight="600" fill="${rankColor}">${rank}</text>
+  <text x="322" y="160" text-anchor="middle" class="t" font-size="10">top ${percentile.toFixed(1)}%</text>
 
   <text x="400" y="34" class="h">Top Languages</text>
   ${langRows}

@@ -34,9 +34,9 @@
     <text x="30" y="166" class="t">Contributed to</text>
     <text x="270" y="166" class="b" text-anchor="end">1</text>
 
-  <circle cx="322" cy="105" r="30" fill="none" stroke="#7d9468" stroke-width="3"/>
-  <text x="322" y="110" text-anchor="middle" font-size="14" font-weight="600" fill="#7d9468">B-</text>
-  <text x="322" y="152" text-anchor="middle" class="t" font-size="10">top 73.3%</text>
+  <circle cx="322" cy="103" r="30" fill="none" stroke="#7d9468" stroke-width="3"/>
+  <text x="322" y="108" text-anchor="middle" font-size="14" font-weight="600" fill="#7d9468">B-</text>
+  <text x="322" y="160" text-anchor="middle" class="t" font-size="10">top 73.3%</text>
 
   <text x="400" y="34" class="h">Top Languages</text>
   
