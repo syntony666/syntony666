@@ -128,12 +128,17 @@ const RANK_LEVELS = [
 const rank = RANK_LEVELS.find(([t]) => percentile <= t)?.[1] ?? "C";
 const rankColor = { S: "#a08c5b", A: "#6f8ba4", B: "#7d9468" }[rank[0]] ?? "#8a9199";
 
-const EXCLUDED_LANGS = new Set(["Stylus", "SCSS"]);
+const EXCLUDED_LANGS = new Set(
+  (process.env.EXCLUDE_LANGS ?? "Stylus,SCSS")
+    .split(",")
+    .map((s) => s.trim().toLowerCase())
+    .filter(Boolean)
+);
 const langTotals = new Map();
 for (const repo of langData.repositories.nodes) {
   for (const edge of repo.languages.edges) {
     const name = edge.node.name;
-    if (EXCLUDED_LANGS.has(name)) continue;
+    if (EXCLUDED_LANGS.has(name.toLowerCase())) continue;
     const cur = langTotals.get(name) ?? { size: 0, color: "#8a9199" };
     cur.size += edge.size;
     if (edge.node.color) cur.color = edge.node.color;
