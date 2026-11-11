@@ -1,14 +1,14 @@
 ### Hi, I'm Tony
 
-Software engineer. I work in TypeScript across the stack: Angular on the job (including an incremental AngularJS → Angular migration), React and Node.js in side projects. Interested in monorepo architecture, legacy modernization, and developer tooling.
+I'm a software engineer working across web applications and backend services. I mainly develop in TypeScript and JavaScript, and occasionally write C for embedded hardware. I care about maintainable systems and practical developer tools.
 
-Blog: [blog.syntony666.com](https://blog.syntony666.com)
+[Blog](https://blog.syntony666.com)
 
-#### Featured projects
+#### Featured Projects
 
-- **[discord-bot](https://github.com/syntony666/discord-bot)** — Modular Discord bot monorepo: keyword auto-replies, reaction roles, member notifications, Twitch/YouTube stream alerts. TypeScript, RxJS, Hono, Prisma + PostgreSQL.
-- **[map-gallery](https://github.com/syntony666/map-gallery)** — Photo collections organized on an interactive Taiwan map. React 19 + Vite + Leaflet SPA, Hono + Drizzle + SQLite API.
-- **[rlcd-esp32-controller](https://github.com/syntony666/rlcd-esp32-controller)** — ESP32-S3 controller firmware for a 4.2" RLCD display (ESP-IDF, C).
+- **[discord-bot](https://github.com/syntony666/discord-bot)**. A monorepo for a modular Discord bot featuring auto-replies, reaction roles, member notifications, and stream alerts. Built with TypeScript, RxJS, Hono, Prisma, and PostgreSQL.
+- **[map-gallery](https://github.com/syntony666/map-gallery)**. An interactive map for organizing photo collections from around Taiwan. Built with React, Vite, Leaflet, Hono, Drizzle, and SQLite.
+- **[rlcd-esp32-controller](https://github.com/syntony666/rlcd-esp32-controller)**. ESP32-S3 firmware for controlling a 4.2-inch RLCD display. Built with ESP-IDF and C.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./stats/stats-dark.svg">
