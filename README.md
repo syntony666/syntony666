@@ -1,6 +1,6 @@
 ### Hi, I'm Tony Lu
 
-Frontend engineer at [Sunbird Software](https://www.sunbirddcim.com) — a US-based DCIM / enterprise software company with a distributed team. I work in TypeScript across the stack: Angular on the job (including an incremental AngularJS → Angular migration), React and Node.js in side projects. Interested in monorepo architecture, legacy modernization, and developer tooling.
+Software engineer. I work in TypeScript across the stack: Angular on the job (including an incremental AngularJS → Angular migration), React and Node.js in side projects. Interested in monorepo architecture, legacy modernization, and developer tooling.
 
 Blog: [blog.syntony666.com](https://blog.syntony666.com)
 
