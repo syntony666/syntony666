@@ -1,4 +1,4 @@
-### Hi, I'm Tony Lu
+### Hi, I'm Tony
 
 Software engineer. I work in TypeScript across the stack: Angular on the job (including an incremental AngularJS → Angular migration), React and Node.js in side projects. Interested in monorepo architecture, legacy modernization, and developer tooling.
 
